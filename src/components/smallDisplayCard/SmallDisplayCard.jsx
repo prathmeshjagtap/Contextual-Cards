@@ -13,6 +13,7 @@ function SmallDisplayCard({ cards, is_scrollable }) {
 			{cards &&
 				cards.map((card) => (
 					<div
+						key={card?.url}
 						className="smallDisplayCard"
 						style={{ backgroundColor: card?.bg_color }}
 						onClick={() => window.open(`${card.url}`, "_blank")}

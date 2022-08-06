@@ -1,0 +1,13 @@
+.imageCard__container {
+	display: flex;
+	gap: 1rem;
+}
+.imageCard {
+	max-width: 280px;
+}
+
+.imageCard__image {
+	width: 280px;
+	height: auto;
+	object-fit: cover;
+}
