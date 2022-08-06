@@ -1,0 +1,10 @@
+.dynamicCard__Container {
+	display: flex;
+	gap: 1rem;
+}
+
+.dynamicCardBackground {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}

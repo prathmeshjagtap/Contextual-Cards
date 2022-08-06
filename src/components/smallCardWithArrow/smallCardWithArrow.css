@@ -1,0 +1,27 @@
+.smallCardWithArrow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 12px;
+	background-color: #ffffff;
+}
+.smallCardWithArrow__Info {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+.smallCardWithArrow__icon {
+	width: 2rem;
+}
+.smallCardWithArrow__title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.arrow__svg {
+	cursor: pointer;
+}
