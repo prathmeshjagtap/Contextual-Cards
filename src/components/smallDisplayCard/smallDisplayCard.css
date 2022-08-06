@@ -1,0 +1,20 @@
+.smallDisplayCard {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	padding: 12px;
+	border-radius: 12px;
+}
+.smallDisplayCard__icon {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
+
+.smallDisplayCard__title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}

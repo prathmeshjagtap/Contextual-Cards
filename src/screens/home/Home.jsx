@@ -8,14 +8,6 @@ function Home() {
 
 	const [cardsArray, setCardArray] = useState([]);
 
-	// public enum DesignTypes {
-	//     SMALL_DISPLAY_CARD("HC1"),
-	//     BIG_DISPLAY_CARD("HC3"),
-	//     IMAGE_CARD("HC5"),
-	//     SMALL_CARD_WITH_ARROW("HC6"),
-	//         DYNAMIC_WIDTH_CARD("HC9")
-	// }
-
 	useEffect(() => {
 		(async () => {
 			const response = await getData(url);
@@ -23,7 +15,6 @@ function Home() {
 		})();
 	}, [url]);
 
-	console.log(cardsArray);
 	return (
 		<div className="home__container">
 			<div className="cards__container">

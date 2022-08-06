@@ -14,10 +14,10 @@ function DynamicWidthCard({ cards, is_scrollable, height }) {
 				cards.map((card) => (
 					<img
 						onClick={() => window.open(`${card.url}`, "_blank")}
-						src={card.bg_image.image_url}
+						src={card.bg_image?.image_url}
 						alt="dynamicCardBackground"
 						style={{
-							aspectRatio: card.bg_image.aspect_ratio,
+							aspectRatio: card.bg_image?.aspect_ratio,
 							maxHeight: `${height}px`,
 						}}
 						className="dynamicCardBackground"
