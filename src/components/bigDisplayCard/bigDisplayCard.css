@@ -1,0 +1,27 @@
+.bigDisplayCard {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+.bigDisplayCard__title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 35px;
+	margin-top: 10rem;
+}
+.bigDisplayCard__description {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	margin: 1rem 0;
+}
+.bigDisplayCard__button {
+	padding: 6px 12px;
+	width: 12ch;
+	border-radius: 6px;
+}

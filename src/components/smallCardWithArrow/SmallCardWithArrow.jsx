@@ -1,5 +1,5 @@
 import React from "react";
-import { getFormattedTitle } from "../../utils";
+import { DisplayText } from "../index";
 import "./smallCardWithArrow.css";
 
 function SmallCardWithArrow({ cards, is_scrollable }) {
@@ -24,7 +24,7 @@ function SmallCardWithArrow({ cards, is_scrollable }) {
 								className="smallCardWithArrow__icon"
 							/>
 							<h2 className="smallCardWithArrow__title">
-								{getFormattedTitle(card.formatted_title)}
+								<DisplayText text={card.formatted_title} />
 							</h2>
 						</div>
 						<svg

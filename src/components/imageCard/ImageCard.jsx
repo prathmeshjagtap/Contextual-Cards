@@ -12,9 +12,12 @@ function ImageCard({ cards, is_scrollable }) {
 		>
 			{cards &&
 				cards.map((card) => (
-					<div className="imageCard" key={card?.url}>
+					<div
+						className="imageCard"
+						key={card?.url}
+						onClick={() => window.open(`${card.url}`, "_blank")}
+					>
 						<img
-							onClick={() => window.open(`${card.url}`, "_blank")}
 							src={card.bg_image?.image_url}
 							alt="ImageCard"
 							style={{

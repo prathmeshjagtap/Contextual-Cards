@@ -1,3 +1,7 @@
+.home__container {
+	max-width: 400px;
+}
+
 .cards__container {
 	background-color: #f7f6f3;
 }

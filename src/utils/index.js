@@ -1,2 +1,2 @@
 export { getData } from "./getData";
-export { getFormattedTitle } from "./getFormattedTitle";
+export { getFormattedText } from "./getFormattedText";
