@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { useDataContext } from "../../context";
 import { useLongPress } from "../../hooks";
+import { getFilteredCards } from "../../utils";
 import { DisplayText } from "../index";
 import "./bigDisplayCard.css";
 
 function DisplayCard({ card }) {
+	const { cardsArray, setCardArray } = useDataContext();
+	const { cardsData, dismissedCards } = cardsArray;
 	const [cardlongPressed, setcardLongPressed] = useState(false);
 
 	const onLongPress = () => {
@@ -19,11 +23,26 @@ function DisplayCard({ card }) {
 		delay: 300,
 	};
 	const longPressEvent = useLongPress(onLongPress, onClick, defaultOptions);
+
+	const remindLater = () => {
+		let updateCards = getFilteredCards(cardsData, card);
+		setCardArray({ ...cardsArray, cardsData: updateCards });
+	};
+
+	const dismissNow = () => {
+		let updateCards = getFilteredCards(cardsData, card);
+		setCardArray({
+			...cardsArray,
+			cardsData: updateCards,
+			dismissedCards: [...dismissedCards, card.name],
+		});
+	};
+
 	return (
 		<div className="bigDisplayCard__action">
 			{cardlongPressed ? (
 				<div className="action__container">
-					<div className="action__buttons">
+					<div className="action__buttons" onClick={remindLater}>
 						<svg
 							width="18"
 							height="21"
@@ -40,7 +59,7 @@ function DisplayCard({ card }) {
 						</svg>
 						<p className="action__buttons__text">remind later</p>
 					</div>
-					<div className="action__buttons">
+					<div className="action__buttons" onClick={dismissNow}>
 						<svg
 							width="19"
 							height="19"

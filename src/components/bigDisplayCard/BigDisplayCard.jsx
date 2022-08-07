@@ -10,8 +10,9 @@ function BigDisplayCard({ cards, is_scrollable }) {
 				margin: is_scrollable ? "1rem 0 1rem 1rem" : "1rem",
 			}}
 		>
-			{cards &&
-				cards.map((card) => <DisplayCard key={card?.url} card={card} />)}
+			{cards.length > 0
+				? cards.map((card) => <DisplayCard key={card?.name} card={card} />)
+				: null}
 		</div>
 	);
 }
