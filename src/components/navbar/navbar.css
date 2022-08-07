@@ -1,0 +1,30 @@
+.logo__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0;
+}
+.logo__text {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 19.8917px;
+	line-height: 23px;
+	color: #4c5454;
+}
+.logo__icon {
+	width: 2rem;
+}
+.nav__icons__container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 1rem;
+	padding: 0 1rem;
+}
+.nav__icons__container i {
+	color: rgba(0, 0, 0, 0.38);
+}
+.caret__down {
+	font-size: 2rem;
+}

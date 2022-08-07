@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { SelectCard } from "../../components";
+import { Navbar, SelectCard } from "../../components";
 import { getData } from "../../utils";
 import "./home.css";
 
@@ -15,6 +15,7 @@ function Home() {
 
 	return (
 		<div className="home__container">
+			<Navbar />
 			<div className="cards__container">
 				{cardsArray &&
 					cardsArray.map((cardGroup) => (
