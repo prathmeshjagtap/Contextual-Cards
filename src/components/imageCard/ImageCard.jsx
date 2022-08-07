@@ -6,7 +6,6 @@ function ImageCard({ cards, is_scrollable }) {
 		<div
 			style={{
 				overflowX: is_scrollable ? "scroll" : "visible",
-				margin: is_scrollable ? "1rem 0 1rem 1rem" : "1rem",
 			}}
 			className="imageCard__container"
 		>

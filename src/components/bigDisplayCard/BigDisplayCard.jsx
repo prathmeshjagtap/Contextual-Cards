@@ -29,10 +29,16 @@ function BigDisplayCard({ cards, is_scrollable }) {
 						}}
 					>
 						<h2 className="bigDisplayCard__title">
-							<DisplayText text={card.formatted_title} />
+							<DisplayText
+								formattedTitle={card.formatted_title}
+								simpleTitle={card.title}
+							/>
 						</h2>
 						<h2 className="bigDisplayCard__description">
-							<DisplayText text={card.formatted_description} />
+							<DisplayText
+								formattedTitle={card.formatted_description}
+								simpleTitle={card.description}
+							/>
 						</h2>
 						{card?.cta?.map((ctaButton) => (
 							<button

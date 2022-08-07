@@ -24,7 +24,10 @@ function SmallCardWithArrow({ cards, is_scrollable }) {
 								className="smallCardWithArrow__icon"
 							/>
 							<h2 className="smallCardWithArrow__title">
-								<DisplayText text={card.formatted_title} />
+								<DisplayText
+									formattedTitle={card.formatted_title}
+									simpleTitle={card.title}
+								/>
 							</h2>
 						</div>
 						<svg

@@ -3,16 +3,11 @@ import { DisplayText } from "../index";
 import "./smallDisplayCard.css";
 
 function SmallDisplayCard({ cards, is_scrollable }) {
-	// const calcWidth = (length) => {
-	// 	let width = 100 / length;
-	// 	return `${width - 10}%`;
-	// };
-
 	return (
 		<div
 			style={{
 				overflowX: is_scrollable ? "scroll" : "visible",
-				margin: is_scrollable ? "1rem 0 1rem 1rem" : "1rem",
+				flexWrap: is_scrollable ? "nowrap" : "wrap",
 			}}
 			className="smallDisplayCard__container"
 		>
@@ -23,11 +18,8 @@ function SmallDisplayCard({ cards, is_scrollable }) {
 						className="smallDisplayCard"
 						style={{
 							backgroundColor: card?.bg_color,
-							minWidth: is_scrollable
-								? card.length === 1
-									? "90%"
-									: "60%"
-								: "30%",
+							minWidth: is_scrollable ? "60%" : "none",
+							flexGrow: "1",
 						}}
 						onClick={() => window.open(`${card.url}`, "_blank")}
 					>
@@ -41,7 +33,10 @@ function SmallDisplayCard({ cards, is_scrollable }) {
 						/>
 						<div>
 							<h2 className="smallDisplayCard__title">
-								<DisplayText text={card.formatted_title} />
+								<DisplayText
+									formattedTitle={card.formatted_title}
+									simpleTitle={card.title}
+								/>
 							</h2>
 						</div>
 					</div>

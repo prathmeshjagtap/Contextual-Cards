@@ -1,8 +1,10 @@
 import React from "react";
 import { getFormattedText } from "../../utils";
 
-function DisplayText({ text }) {
-	const formattedText = getFormattedText(text);
+function DisplayText({ formattedTitle, simpleTitle }) {
+	const formattedText = formattedTitle
+		? getFormattedText(formattedTitle)
+		: [{ text: simpleTitle }];
 
 	return (
 		<>

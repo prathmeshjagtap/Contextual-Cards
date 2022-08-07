@@ -1,8 +1,7 @@
 .smallDisplayCard__container {
 	display: flex;
 	gap: 1rem;
-	max-width: 300px;
-	width: fit-content;
+	margin: 1rem;
 }
 
 .smallDisplayCard {
@@ -11,7 +10,6 @@
 	align-items: center;
 	padding: 12px;
 	border-radius: 12px;
-	width: 280px;
 }
 .smallDisplayCard__icon {
 	width: 2rem;
