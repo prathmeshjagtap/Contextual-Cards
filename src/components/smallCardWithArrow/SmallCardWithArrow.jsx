@@ -15,7 +15,7 @@ function SmallCardWithArrow({ cards, is_scrollable }) {
 					<div
 						key={card?.url}
 						className="smallCardWithArrow"
-						onClick={() => window.open(`${card.url}`, "_blank")}
+						onClick={() => window.open(`${card.url}`, "_self")}
 					>
 						<div className="smallCardWithArrow__Info">
 							<img

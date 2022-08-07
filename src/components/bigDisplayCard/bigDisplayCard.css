@@ -1,7 +1,20 @@
+.bigDisplayCard__action {
+	display: flex;
+	background-color: #ffffff;
+	position: relative;
+	max-width: 400px;
+	margin-bottom: 1rem;
+	height: 22rem;
+}
+
 .bigDisplayCard {
 	display: flex;
 	flex-direction: column;
+	object-fit: contain;
+	position: absolute;
 	padding: 1rem;
+	width: 100%;
+	height: 22rem;
 }
 
 .bigDisplayCard__title {
@@ -24,4 +37,42 @@
 	padding: 6px 12px;
 	width: 12ch;
 	border-radius: 6px;
+}
+
+.action__container {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	background-color: #ffffff;
+	width: 40%;
+	align-self: center;
+}
+.action__buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 72px;
+	height: 59px;
+	background: #f7f6f3;
+	border-radius: 12px;
+	margin: 1rem 0;
+	cursor: pointer;
+}
+.action__buttons__text {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	text-align: center;
+	color: #000000;
+}
+
+.bigDisplayCard_slide {
+	margin-right: 1rem;
+	right: -120px;
+	top: 0;
+	transition: 0.4s;
 }

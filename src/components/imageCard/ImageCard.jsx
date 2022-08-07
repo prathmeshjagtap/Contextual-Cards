@@ -14,7 +14,7 @@ function ImageCard({ cards, is_scrollable }) {
 					<div
 						className="imageCard"
 						key={card?.url}
-						onClick={() => window.open(`${card.url}`, "_blank")}
+						onClick={() => window.open(`${card.url}`, "_self")}
 					>
 						<img
 							src={card.bg_image?.image_url}

@@ -21,7 +21,7 @@ function SmallDisplayCard({ cards, is_scrollable }) {
 							minWidth: is_scrollable ? "60%" : "none",
 							flexGrow: "1",
 						}}
-						onClick={() => window.open(`${card.url}`, "_blank")}
+						onClick={() => window.open(`${card.url}`, "_self")}
 					>
 						<img
 							src={card.icon.image_url}

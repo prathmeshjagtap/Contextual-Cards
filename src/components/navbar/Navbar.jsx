@@ -8,7 +8,7 @@ function Navbar() {
 			<div className="nav__icons__container">
 				<i className="fas fa-square"></i>
 				<i className="fas fa-circle"></i>
-				<i class="fas fa-caret-down caret__down"></i>
+				<i className="fas fa-caret-down caret__down"></i>
 			</div>
 			<div className="logo__container">
 				<h2 className="logo__text">fampay</h2>
