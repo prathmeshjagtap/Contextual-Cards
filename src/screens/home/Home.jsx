@@ -4,13 +4,11 @@ import { getData, getToShowCards } from "../../utils";
 import "./home.css";
 import PullToRefresh from "react-simple-pull-to-refresh";
 import { useDataContext } from "../../context";
+import { url } from "../../url";
 
 function Home() {
 	const { cardsArray, setCardArray } = useDataContext();
 	const { cardsData, dismissedCards } = cardsArray;
-
-	// Change URL here and in context to test on different data from backend
-	const url = "https://run.mocky.io/v3/4d8db890-5327-4c69-a3ef-b4f5f5225d17";
 
 	const handleRefresh = async () => {
 		const response = await getData(url);

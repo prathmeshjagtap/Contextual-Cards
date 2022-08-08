@@ -44,6 +44,10 @@ Start the server
 
 ---
 
+## To Test with different URL.
+
+- URL Is kept in seperate file url.js , so testing can be done with different urls, just change the url here in url.js file
+
 ## Tech Stack
 
 **Client:** React.
