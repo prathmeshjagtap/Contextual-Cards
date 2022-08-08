@@ -3,11 +3,9 @@
 	gap: 1rem;
 	margin: 1rem;
 }
-.imageCard {
-	max-width: 280px;
-}
+
 .imageCard__image {
-	width: 280px;
+	width: 100%;
 	height: auto;
 	object-fit: cover;
 }
